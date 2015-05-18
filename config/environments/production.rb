@@ -79,6 +79,10 @@ MajoPinteresting::Application.configure do
 
   config.assets.initialize_on_precompile = false
 
+  # Paperclip config:
+  Paperclip.options[:image_magick_path] = "/opt/ImageMagick/bin"
+  Paperclip.options[:command_path] = "/opt/ImageMagick/bin"
+
     # Required for Heroku
     # Note to set this to your actual host
   config.action_mailer.default_url_options = { :host => 'https://majopinteresting.herokuapp.com' }

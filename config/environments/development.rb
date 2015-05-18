@@ -36,6 +36,10 @@ MajoPinteresting::Application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
+  # Paperclip config:
+  Paperclip.options[:image_magick_path] = "/opt/ImageMagick/bin"
+  Paperclip.options[:command_path] = "/opt/ImageMagick/bin"
+
   # Required for Heroku
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
