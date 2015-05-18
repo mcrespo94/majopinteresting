@@ -83,4 +83,3 @@ MajoPinteresting::Application.configure do
     # Note to set this to your actual host
   config.action_mailer.default_url_options = { :host => 'https://majopinteresting.herokuapp.com' }
 end
-end
